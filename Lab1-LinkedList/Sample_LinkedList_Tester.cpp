@@ -47,19 +47,27 @@ int main()
    intList.display(cout);
    cout << endl << endl;
 
-   // Test maxItem();
+   // Test maxItem
    cout << "Max Item (first list): " << intList.maxItem(cout) << endl;
    cout << "Max Item (second list): " << anotherList.maxItem(cout) << endl;
    LinkedList singleItemList;
    singleItemList.insert(100, 0);
    cout << "New list with a single item: ";
    singleItemList.display(cout);
-   cout << "\nMax Item: " << singleItemList.maxItem(cout) << endl;
+   cout << "\nMax Item (single item list): " << singleItemList.maxItem(cout) << endl;
    LinkedList emptyList;
    cout << "New empty list: ";
    emptyList.display(cout);
    cout << endl;
-   cout << "Max Item: " << emptyList.maxItem(cout) << endl;
+   cout << "Max Item (empty list): " << emptyList.maxItem(cout) << endl;
+   cout << endl;
+
+
+   // Test isAscendingOrder
+   cout << "isAscendingOrder (first list): " << intList.isAscendingOrder() << endl;
+   cout << "isAscendingOrder (second list) : " << anotherList.isAscendingOrder() << endl;
+   cout << "isAscendingOrder (empty list) : " << singleItemList.isAscendingOrder() << endl;
+   cout << "isAscendingOrder (single item list) : " << singleItemList.isAscendingOrder() << endl;
 
    cout << endl;
 

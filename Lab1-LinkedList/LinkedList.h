@@ -1,3 +1,10 @@
+/*
+Title: Lab Linked Lists
+Abstract: Added maxItem and isAscendingOrder
+ID: 003034069
+Date: 1/15/19
+*/
+
 //----- LinkedList.h -----
 #ifndef LINKEDLIST
 #define LINKEDLIST
@@ -24,6 +31,7 @@ public:
 	--------------------------------------------------------------------*/
 
 	ElementType maxItem(ostream & out);
+	bool isAscendingOrder();
 
 private:
 	class Node

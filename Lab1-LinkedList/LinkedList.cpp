@@ -132,3 +132,15 @@ ElementType LinkedList::maxItem(ostream & out)
 	}
 	return max;
 }
+
+//-- Definition of isAscendingOrder()
+bool LinkedList::isAscendingOrder()
+{
+	Node * ptr = first;
+	while (ptr->next != 0)
+	{
+		if (ptr->next->data < ptr->data) return false;
+		ptr = ptr->next;
+	}
+	return true;
+}

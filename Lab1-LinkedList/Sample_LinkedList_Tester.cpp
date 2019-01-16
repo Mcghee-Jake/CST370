@@ -1,3 +1,11 @@
+/*
+Title: Lab Linked Lists
+Abstract: Added maxItem and isAscendingOrder
+ID: 003034069
+Date: 1/15/19
+*/
+
+
 #include <iostream>
 using namespace std;
 

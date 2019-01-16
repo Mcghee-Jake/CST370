@@ -1,10 +1,3 @@
-/*
-Title: Lab Linked Lists
-Abstract: Added maxItem and isAscendingOrder
-ID: 003034069
-Date: 1/15/19
-*/
-
 #include <iostream>
 using namespace std;
 
@@ -120,34 +113,4 @@ void LinkedList::display(ostream & out) const
 		out << ptr->data << " ";
 		ptr = ptr->next;
 	}
-}
-
-//-- Definition of maxItem()
-ElementType LinkedList::maxItem(ostream & out)
-{
-	Node * ptr = first;
-	ElementType max = -1;
-	while (ptr != 0)
-	{
-		if (ptr->data >= max) {
-			max = ptr->data;
-		}
-		ptr = ptr->next;
-	}
-	if (max == -1) {
-		out << "ERROR - List Empty\n";
-	}
-	return max;
-}
-
-//-- Definition of isAscendingOrder()
-bool LinkedList::isAscendingOrder()
-{
-	Node * ptr = first;
-	while (ptr->next != 0)
-	{
-		if (ptr->next->data < ptr->data) return false;
-		ptr = ptr->next;
-	}
-	return true;
 }

@@ -12,6 +12,7 @@ int main()
 	
 	LinkedList stringList;
 	for (int i = 0; i < myString.length(); i++) {
+		cout << myString[i] << endl;
 		stringList.insert(myString[i], i);
 	}
 

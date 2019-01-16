@@ -1,3 +1,12 @@
+/*
+Title: Linked List Programing Assignment
+Abstract:
+Created a program to take user input and then print out all the combinations
+of substrings within that text that start with A and end with B
+ID: 003034069
+Date: 1/15/19
+*/
+
 //----- LinkedList.h -----
 #ifndef LINKEDLIST
 #define LINKEDLIST
@@ -22,6 +31,8 @@ public:
 	Precondition: ostream out is open
 	Postcondition: Elements of this LinkedList have been output to out.
 	--------------------------------------------------------------------*/
+
+	void substring(ostream & out);
 
 private:
 	class Node

@@ -1,4 +1,14 @@
+/*
+Title: Linked List Programing Assignment
+Abstract:
+Created a program to take user input and then print out all the combinations 
+of substrings within that text that start with A and end with B
+ID: 003034069
+Date: 1/15/19
+*/
+
 #include <iostream>
+#include <string>
 using namespace std;
 
 #include "LinkedList.h"
@@ -113,4 +123,39 @@ void LinkedList::display(ostream & out) const
 		out << ptr->data << " ";
 		ptr = ptr->next;
 	}
+}
+
+//-- Definition of substring()
+void LinkedList::substring(ostream & out)
+{
+	Node * ptr1 = first;
+	Node * ptr2;
+	string substring;
+	int count = 0;
+
+	// Start stepping through linked list
+	while (ptr1 != 0)
+	{
+		// Seach for the letter "A" (ASCII 65)
+		if (ptr1->data == 65)
+		{
+			// When "A" is found, start building a substring
+			substring = "";
+			ptr2 = ptr1;
+			while (ptr2 != 0)
+			{
+				substring += ptr2->data;
+				// Search for the letter "B" (ASCII 66)
+				if (ptr2->data == 66)
+				{
+					// Print out the substring
+					out << "Substring " << ++count << ": " << substring << endl;
+				}
+				ptr2 = ptr2->next;
+				
+			}
+		}
+		ptr1 = ptr1->next;
+	}
+	out << "Total " << count << " substrings" << endl;
 }

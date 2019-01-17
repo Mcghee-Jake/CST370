@@ -1,3 +1,11 @@
+/*
+Title: Lab - Stacks
+Abstract: Added a program to reverse a string and a program to convert a decimal number into binary
+ID: 003034069
+Date: 1/17/19
+*/
+
+
 /*-- Stack.h ---------------------------------------------------------------
  
   This header file defines a Stack data type.

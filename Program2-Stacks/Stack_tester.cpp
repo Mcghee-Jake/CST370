@@ -1,3 +1,10 @@
+/*
+Title: Programming Assignment 2 - Stacks
+Abstract: Added a program that sorts a stack using a second stack
+ID: 003034069
+Date: 1/17/19
+*/
+
 /*---------------------------------------------------------------------
 			   Driver program to test the Stack class.
   ----------------------------------------------------------------------*/
@@ -10,8 +17,22 @@ using namespace std;
 
 int main()
 {
+
+	/* 
+	--- Psudocode Explanation ---
+
+	- While the unsorted stack is not empty
+		- Pop the top element and store it in a temp variable
+		- While the second stack is not empty and the top element of that stack is greater then the value in the temp variable
+			- Pop the top element of the second stack and push it onto the first stack
+		- Push the value of the temp variable onto the second stack
+	*/
+
+
 	Stack s1, s2;
 	int nums[] = { 1, 5, 3, -3, 4, 8, 10, -5 };
+	//int nums[] = { 1, 5, -4, 6, 2 };
+	//int nums[] = { 1, -4, -4, 6, 6, 9 };
 	for (int i = 0; i < sizeof(nums) / sizeof(nums[0]); i++) {
 		s1.push(nums[i]);
 	}

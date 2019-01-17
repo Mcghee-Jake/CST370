@@ -1,3 +1,11 @@
+/*
+Title: Programming Assignment 2 - Stacks
+Abstract: Added a program that sorts a stack using a second stack
+ID: 003034069
+Date: 1/17/19
+*/
+
+
 /*-- Stack.cpp-------------------------------------------------------------
               This file implements Stack member functions.
 --------------------------------------------------------------------------*/
